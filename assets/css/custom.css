@@ -11294,11 +11294,23 @@ header.main-header.header-stone .header-sticky.active {
     position: relative;
     line-height: 1.5em;
     color: var(--white-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .footer-privacy-policy-stone ul li a {
     color: inherit;
     transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-privacy-policy-stone ul li a img {
+    max-height: 40px !important;
+    width: auto;
+    vertical-align: middle;
+    display: block;
 }
 
 .footer-privacy-policy-stone ul li a:hover {
