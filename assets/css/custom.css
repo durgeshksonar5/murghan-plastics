@@ -398,9 +398,9 @@ a:focus {
 
 .loading-container,
 .loading {
-    height: 100px;
+    height: 170px;
     position: relative;
-    width: 100px;
+    width: 170px;
     border-radius: 100%;
 }
 
@@ -424,8 +424,15 @@ a:focus {
     position: absolute;
     top: 50%;
     left: 50%;
-    max-width: 66px;
+    width: 120px;
+    max-width: 120px;
     transform: translate(-50%, -50%);
+}
+
+#loading-icon img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 @keyframes rotate-loading {
