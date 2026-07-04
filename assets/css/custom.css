@@ -2888,6 +2888,13 @@ header.main-header .header-sticky.active {
     top: 20px;
 }
 
+/* FAQ section title always black */
+.our-faqs .section-title h3,
+.our-faqs .section-title h2,
+.our-faqs .section-title p {
+    color: #0B0904;
+}
+
 .contact-us-circle a {
     display: inline-block;
     border-radius: 50%;
