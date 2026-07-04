@@ -11059,6 +11059,9 @@ header.main-header.header-stone .header-sticky.active {
 .footer-logo-stone img {
     width: 100%;
     max-width: 137px;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 8px;
 }
 
 .about-footer-content-stone {
