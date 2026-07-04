@@ -2952,7 +2952,7 @@ header.main-header .header-sticky.active {
     right: 0;
     top: 0;
     font-size: 18px;
-    color: var(--primary-color);
+    color: #0B0904;
     background-color: var(--accent-color);
     height: 34px;
     width: 34px;
@@ -2966,7 +2966,7 @@ header.main-header .header-sticky.active {
 .faq-accordion .accordion-button:not(.collapsed)::after {
     content: '\f077';
     background-color: var(--primary-color);
-    color: var(--accent-color);
+    color: #0B0904;
 }
 
 .faq-accordion .accordion-item .accordion-body {
@@ -11000,7 +11000,7 @@ header.main-header.header-stone .header-sticky.active {
     right: 20px;
     top: 50%;
     font-size: 20px;
-    color: var(--primary-color);
+    color: #0B0904;
     transform: translateY(-50%);
     transition: all 0.3s ease-in-out;
 }
