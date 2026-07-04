@@ -52,52 +52,14 @@
 /************************************/
 
 :root {
-    /* Brand Primary Colors */
-    --color-primary: #EAA110;
-    --color-primary-dark: #B87507;
-    --color-primary-light: #FAE367;
-
-    /* Brand Secondary Colors */
-    --color-secondary: #0B0904;
-    --color-secondary-light: #3C321E;
-
-    /* Accent Colors */
-    --color-accent: #E2B640;
-    --color-accent-dark: #804E05;
-    --color-accent-light: #F7DC60;
-
-    /* Background Colors */
-    --color-white: #FFFFFF;
-    --color-bg-light: #F8F6F1;
-    --color-bg-gold-light: #FFF7DC;
-    --color-bg-dark: #141009;
-
-    /* Text Colors */
-    --color-heading: #0B0904;
-    --color-text: #3C321E;
-    --color-text-light: #716F69;
-    --color-text-white: #FFFFFF;
-
-    /* Border & Shadow */
-    --color-border: #E5DFD5;
-    --color-border-gold: #E2B640;
-    --box-shadow-soft: 0 10px 30px rgba(11, 9, 4, 0.10);
-    --box-shadow-gold: 0 10px 30px rgba(234, 161, 16, 0.25);
-
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #FAE367 0%, #EAA110 45%, #B87507 100%);
-    --gradient-gold-dark: linear-gradient(135deg, #EAA110 0%, #804E05 100%);
-    --gradient-dark: linear-gradient(135deg, #0B0904 0%, #3C321E 100%);
-
-    /* Template variables mapped to brand colors */
-    --primary-color: var(--color-primary);
-    --secondary-color: var(--color-white);
-    --bg-color: var(--color-bg-light);
-    --text-color: var(--color-text);
-    --accent-color: var(--color-accent);
-    --white-color: var(--color-white);
-    --divider-color: var(--color-border);
-    --dark-divider-color: var(--color-border-gold);
+    --primary-color: #0B2B3F;
+    --secondary-color: #FFFFFF;
+    --bg-color: #F2F5FB;
+    --text-color: #555555;
+    --accent-color: #FBE87E;
+    --white-color: #FFFFFF;
+    --divider-color: #0B2B3F1A;
+    --dark-divider-color: #FFFFFF14;
     --error-color: rgb(230, 87, 87);
     --default-font: "Plus Jakarta Sans", sans-serif;
 }
@@ -156,7 +118,7 @@ h5,
 h6 {
     font-weight: 600;
     line-height: 1.2em;
-    color: var(--color-heading);
+    color: var(--primary-color);
     margin: 0;
 }
 
@@ -265,8 +227,8 @@ a:focus {
     font-weight: 600;
     line-height: 1em;
     text-transform: capitalize;
-    color: var(--color-secondary);
-    background: var(--gradient-primary);
+    color: var(--primary-color);
+    background: var(--accent-color);
     border-radius: 10px;
     padding: 17px 55px 17px 20px;
     border: none;
@@ -276,7 +238,7 @@ a:focus {
 }
 
 .btn-default:hover {
-    color: var(--color-white);
+    color: var(--white-color);
 }
 
 .btn-default::before {
@@ -286,7 +248,7 @@ a:focus {
     right: 7px;
     width: 38px;
     height: 38px;
-    background-color: var(--color-secondary);
+    background-color: var(--primary-color);
     background-image: url('../images/arrow-white.svg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -297,8 +259,8 @@ a:focus {
 }
 
 .btn-default:hover:before {
-    background-color: var(--color-primary);
-    background-image: url('../images/arrow-white.svg');
+    background-color: var(--accent-color);
+    background-image: url('../images/arrow-primary.svg');
 }
 
 .btn-default::after {
@@ -309,7 +271,7 @@ a:focus {
     bottom: 0;
     width: 0;
     height: 100%;
-    background: var(--gradient-gold-dark);
+    background: var(--primary-color);
     transition: all 0.4s ease-in-out;
     z-index: -1;
 }
@@ -321,34 +283,34 @@ a:focus {
 }
 
 .btn-default.btn-highlighted:hover {
-    color: var(--color-white);
+    color: var(--primary-color);
 }
 
 .btn-default.btn-highlighted:hover:before {
-    background-color: var(--color-secondary);
+    background-color: var(--primary-color);
     background-image: url('../images/arrow-white.svg');
 }
 
 .btn-default.btn-highlighted::after {
-    background-color: var(--color-secondary);
+    background-color: var(--white-color);
 }
 
 .btn-default.btn-light {
-    background: var(--color-secondary);
-    color: var(--color-white);
+    background: var(--dark-divider-color);
+    color: var(--white-color);
 }
 
 .btn-default.btn-light:hover {
-    color: var(--color-primary);
+    color: var(--primary-color);
 }
 
 .btn-default.btn-light:before {
-    background-color: var(--color-accent);
-    background-image: url('../images/arrow-white.svg');
+    background-color: var(--accent-color);
+    background-image: url('../images/arrow-primary.svg');
 }
 
 .btn-default.btn-light::after {
-    background-color: var(--color-secondary-light);
+    background-color: var(--white-color);
 }
 
 .readmore-btn {
@@ -765,7 +727,7 @@ header.main-header .header-sticky.active {
     position: absolute;
     width: 100%;
     padding: 0;
-    background: var(--color-bg-light);
+    background: var(--accent-color);
 }
 
 .slicknav_menu ul {
@@ -783,7 +745,7 @@ header.main-header .header-sticky.active {
     font-weight: 600;
     text-transform: capitalize;
     padding: 7px 20px;
-    color: var(--color-secondary);
+    color: var(--primary-color);
     line-height: normal;
     margin: 0;
     border-radius: 0 !important;
@@ -794,7 +756,7 @@ header.main-header .header-sticky.active {
 .slicknav_nav a:focus,
 .slicknav_nav .slicknav_row:hover {
     background-color: transparent;
-    color: var(--color-primary);
+    color: var(--white-color);
 }
 
 .slicknav_menu ul ul li a {
@@ -811,7 +773,7 @@ header.main-header .header-sticky.active {
     font-weight: 900;
     font-size: 12px;
     margin-left: 8px;
-    color: var(--color-secondary);
+    color: var(--primary-color);
     position: absolute;
     right: 15px;
     top: 50%;
@@ -821,7 +783,7 @@ header.main-header .header-sticky.active {
 
 .slicknav_open>a .slicknav_arrow:after {
     transform: translateY(-50%) rotate(-180deg);
-    color: var(--color-primary);
+    color: var(--white-color);
 }
 
 /************************************/
@@ -1652,8 +1614,8 @@ header.main-header .header-sticky.active {
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
-    background: var(--color-secondary);
-    color: var(--color-primary);
+    background: var(--accent-color);
+    color: var(--primary-color);
     line-height: 1em;
     padding: 4px 10px;
     border-radius: 20px;
@@ -1702,11 +1664,11 @@ header.main-header .header-sticky.active {
 }
 
 .dark-section .section-footer-text p a {
-    color: var(--color-secondary);
+    color: var(--accent-color);
 }
 
 .dark-section .section-footer-text p a:hover {
-    color: var(--color-white);
+    color: var(--secondary-color);
 }
 
 .section-footer-text.section-footer-contact {
@@ -9718,17 +9680,17 @@ header.main-header.header-stone .header-sticky.active {
 }
 
 .main-header.header-stone .main-menu ul li a {
-    color: var(--color-secondary);
+    color: var(--primary-color);
 }
 
 .main-header.header-stone .main-menu ul li a:hover,
 .main-header.header-stone .main-menu ul li a:focus {
-    color: var(--color-primary);
+    color: var(--accent-color);
 }
 
 .main-header.header-stone .main-menu ul ul li a:hover,
 .main-header.header-stone .main-menu ul ul li a:focus {
-    color: var(--color-primary);
+    color: var(--white-color);
 }
 
 .hero-stone.bg-section {
@@ -9753,7 +9715,7 @@ header.main-header.header-stone .header-sticky.active {
 }
 
 .hero-content-stone {
-    background: var(--gradient-gold-dark);
+    background: var(--primary-color);
     border-radius: 10px;
     align-content: center;
     padding: 80px 4.167vw;
@@ -10104,7 +10066,7 @@ header.main-header.header-stone .header-sticky.active {
 
 .service-item-stone.active .service-item-content-stone p,
 .service-item-stone:hover .service-item-content-stone p {
-    color: var(--color-white);
+    color: var(--primary-color);
 }
 
 .service-item-btn-stone {
@@ -11994,37 +11956,4 @@ header.main-header.header-stone .header-sticky.active {
     .footer-privacy-policy-stone ul li::before {
         right: -12px;
     }
-}
-
-/* Mrughan Plastics Color Scheme Overrides */
-.main-footer-stone.bg-section.dark-section {
-    background: var(--gradient-dark) !important;
-}
-.footer-social-links-stone ul li:hover a i {
-    color: var(--color-secondary) !important;
-}
-
-/* Service Card Hover Readability Overrides */
-.service-item-stone.active .service-item-header-stone h3,
-.service-item-stone:hover .service-item-header-stone h3,
-.service-item-stone.active .service-item-header-stone h3 a,
-.service-item-stone:hover .service-item-header-stone h3 a {
-    color: var(--color-white) !important;
-    transition: all 0.3s ease-in-out;
-}
-
-.service-item-stone.active .service-item-btn-stone .readmore-btn,
-.service-item-stone:hover .service-item-btn-stone .readmore-btn {
-    color: var(--color-white) !important;
-    transition: all 0.3s ease-in-out;
-}
-
-.service-item-stone.active .service-item-btn-stone .readmore-btn::before,
-.service-item-stone:hover .service-item-btn-stone .readmore-btn::before {
-    background-image: url('../images/arrow-white.svg') !important;
-}
-
-.service-item-stone.active .service-item-body-stone .icon-box::before,
-.service-item-stone:hover .service-item-body-stone .icon-box::before {
-    background: var(--color-secondary) !important;
 }
