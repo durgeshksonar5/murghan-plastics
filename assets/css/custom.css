@@ -10204,7 +10204,7 @@ header.main-header.header-stone .header-sticky.active {
 
 .our-benefits-stone {
     position: relative;
-    background: url('../images/our-benefits-bg-image-stone.webp') no-repeat;
+    background: url('../3.png') no-repeat;
     background-position: center center;
     background-size: cover;
     padding: 100px 0 0;
@@ -10369,7 +10369,7 @@ header.main-header.header-stone .header-sticky.active {
 .our-advantages-stone {
     position: relative;
     padding: 100px 0;
-    background-image: url('../images/advantage-bg-image-stone.webp');
+    background-image: url('../5.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
