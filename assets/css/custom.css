@@ -3345,6 +3345,22 @@ header.main-header .header-sticky.active {
     overflow: hidden;
 }
 
+.page-header.about-header {
+    background-image: url('../1.png');
+}
+
+.page-header.services-header {
+    background-image: url('../2.png');
+}
+
+.page-header.gallery-header {
+    background-image: url('../factory-horizontal.png');
+}
+
+.page-header.contact-header {
+    background-image: url('../factory-horizontal.png');
+}
+
 .page-header:before {
     content: '';
     position: absolute;
